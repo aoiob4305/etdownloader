@@ -71,7 +71,7 @@ if __name__ == '__main__':
 	USERNAME = config.get('SETTING', 'USERNAME')
 	PASSWORD = config.get('SETTING', 'PASSWORD')
 	COMMAND = config.get('SETTING', 'COMMAND')
-	TYPE = config.get('SETTING', 'TYPE')
+	TYPE = int(config.get('SETTING', 'TYPE'))
 
 	lists = getExtraTorrentLinks(getHTML(URL), DAY, TYPE)
 
