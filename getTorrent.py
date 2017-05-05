@@ -54,7 +54,7 @@ if __name__ == '__main__':
 	config_file = ''
 	for opt, arg in opts:
 		if(opt == '-c'):
-			print ('-c option')
+#			print ('-c option')
 			config_file = arg
 
 	if config_file == '':
@@ -76,5 +76,5 @@ if __name__ == '__main__':
 	lists = getExtraTorrentLinks(getHTML(URL), DAY, TYPE)
 
 	for item in lists:
-		print (item)
+#		print (item)
 		os.system ('%s %s --auth %s:%s --add "%s"' % (COMMAND, HOST, USERNAME, PASSWORD, item))
